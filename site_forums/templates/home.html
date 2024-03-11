@@ -4,24 +4,61 @@
 
 {% if user.is_authenticated %}
 
+<br><br>
+
 <div class="jumbotron p-5 text-center bg-image rounded-3" style="
     background-image: url('https://getwallpapers.com/wallpaper/full/7/5/8/1282246-top-forgotten-realms-wallpaper-1920x1080-large-resolution.jpg');
-    height: 500px;
+    height: 800px;
     width: 100%;
   ">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
     <br>
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        <br>
-        <h1 class="mb-3" id="page_title">The FORGOTTEN REALMS Wiki!</h1>
-        <h4 class="mb-3">Hello, {{ user.username }}! </h4>
+        <hr>
+        
+        <h1 class="mb-3" id="page_title">THE FORGOTTEN REALMS WIKI!</h1>
+        <h3 class="mb-3" id="created_by">Brought to you by etooley77</h3>
+        <h4 class="mb-3" id="hello_user">Welcome, {{ user.username }}! </h4>
         {% if staff %}
           <a class="btn btn-outline-light btn-lg" href="" role="button">Write an Entry!</a>
         {% endif %}
         <hr>
       </div>
     </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="about">
+  <div class="about_welcome_title">
+    <h1 id="about_welcome_title">Welcome to the Forgotten Realms Wiki!</h1>
+  </div>
+  <div class="about_text">
+    <p>This project was started on March 8th, 2024!</p>
+  </div>
+</div>
+
+<div class="sticky" id="sticky_left">
+  <div class="contents" id="title">
+    <h4>Contents</h4>
+  </div>
+  <div>
+    <ul class="links">
+      <li class="link"><a href="#">Link!</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="sticky" id="sticky_right">
+  <div class="contents" id="title">
+    <h4>Something Else!</h4>
+  </div>
+  <div>
+    <ul class="links">
+      <li class="link">About something here, maybe the fine creator of this wonderful site?</li>
+    </ul>
   </div>
 </div>
 

@@ -1,8 +1,124 @@
+body {
+    background-color: antiquewhite;
+}
+
 @font-face {
     font-family: 'NightmareText';
     src: url('../fonts/NightmarePills-BV2w.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: 'AlmendraBoldItalic';
+    src: url('../fonts/Almendra-Italic.otf');
+}
+
+/* Register and Login Pages */
+
+
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+/* Jumbotron Section! */
+
 #navbar_title, #page_title {
     font-family: 'NightmareText';
+}
+
+#hello_user, #created_by {
+    font-family: 'AlmendraBoldItalic';
+    font-size: 32px;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask {
+    width: 90%;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.text-white {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* About section */
+
+.about {
+    text-align: center;
+}
+
+#about_welcome_title {
+    font-family: 'NightmareText';
+    text-decoration: underline;
+}
+
+.about_text {
+    font-family: 'AlmendraBoldItalic';
+    font-size: 20px;
+}
+
+/* Sticky components section */
+
+
+
+/* Sticky left (contents) */
+
+#sticky_left {
+    position: fixed;
+    left: 15px;
+    top: 100px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.contents {
+    text-align: center;
+}
+
+.links {
+    list-style: none;
+}
+
+.link, .link a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+/* Sticky right (something else, description, users, etc.) */
+
+#sticky_right {
+    position: fixed;
+    right: 15px;
+    top: 100px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.contents {
+    text-align: center;
+}
+
+.links {
+    list-style: none;
+}
+
+.link, .link a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
