@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NightmareText';
+    src: url('../fonts/NightmarePills-BV2w.ttf') format('opentype');
+}
+
+#navbar_title, #page_title {
+    font-family: 'NightmareText';
+}
